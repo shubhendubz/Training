@@ -1,0 +1,83 @@
+body{
+    width: 1519px;
+    height: 4246px;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    height:  64px;
+    width: 1519px;
+    border: 1px solid red;
+    padding: 8px 0px 8px 0px;
+}
+
+.sidebar1{
+    height:  686.4px;
+    width: 253px;
+    border: 1px solid red;
+    padding: 16px 0px 16px 0px;
+    margin: 0px -15px 0px 0px;
+}
+
+.searchbox{
+    height:  70.8px;
+    width: 252.4px;
+}
+
+
+form{
+    margin: 0px -15px 0px -15px;
+    padding: 16px 15px 16px 15px;
+}
+
+#search{
+    height:  24.4px;
+    width: 196.8px;
+    padding: 6px 12px 6px 12px;
+    margin-left: 25px;
+}
+
+.itemlist{
+    height:  686.4px;
+    width: 253px;
+}
+ul{
+    list-style: none;
+    color: black;
+}
+li{
+    margin: 0.8rem 0;
+}
+a{
+    padding: 4px 24px 4px 24px;
+}
+
+.itemname{
+    padding: 4px 24px 4px 24px;
+}
+
+main{
+    height:  4182px;
+    width: 1012px;
+    border: 1px solid red;
+    margin-top: -720.4px;
+    margin-right: 253.2px;
+    float: right;
+}
+
+.sidebar2{
+    height:  686.4px;
+    width: 253px;
+    border: 1px solid red;
+    padding: 16px 0px 16px 0px;
+    margin: 0px -15px 0px 0px;
+    margin-top: -4184px;
+    margin-right: 0.8px;
+    float: right;
+}
+
+.sidebar2 ul li{
+    margin-left: -25px;
+}
