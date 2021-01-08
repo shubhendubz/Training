@@ -1,0 +1,151 @@
+.navbar-nav{
+    margin-left: -85%;
+}
+
+.navbar-brand{
+    margin-left: -10px;
+}
+
+.icons{
+    color: aliceblue;
+    height: 30px;
+    width: 150px;
+    margin-right: -20%;
+}
+
+i{
+    height: 50px;
+    width: 30px;
+}
+
+.search{
+    float: left;
+    margin-left: 7.8em;
+}
+.version{
+    float: right;
+    margin-right: 7em;
+}
+
+.version>li:hover {
+    border: 1px solid #7952b3;
+    border-radius: 5px;
+}
+
+#srch{
+    margin: 6px 2px;
+    padding: 2px 2px;
+    height: 25px;
+    width: 60px;
+    border: 1px solid grey ;
+    margin-left: -75px;
+    border-radius: 2px;
+}
+
+/*  */
+
+.sidebar1{
+    height:  686.4px;
+    width: 253px;
+    padding: 16px 0px 16px 0px;
+    margin: 0px -15px 0px 0px;
+}
+
+.searchbox{
+    height:  70.8px;
+    width: 252.4px;
+}
+
+
+form{
+    margin: 0px -15px 0px -15px;
+    padding: 16px 15px 16px 15px;
+}
+
+#search{
+    height:  24.4px;
+    width: 196.8px;
+    padding: 6px 12px 6px 12px;
+    margin-left: 25px;
+}
+
+.itemlist{
+    height:  686.4px;
+    width: 253px;
+}
+ul{
+    list-style: none;
+    color: black;
+}
+li{
+    margin: 0.8rem 0;
+}
+a{
+    padding: 4px 24px 4px 24px;
+}
+
+.itemname{
+    padding: 4px 24px 4px 24px;
+}
+
+main{
+    height:  4182px;
+    width: 1012px;
+    margin-top: -720.4px;
+    margin-right: 253.2px;
+    float: right;
+}
+
+.sidebar2{
+    height:  686.4px;
+    width: 253px;
+    padding: 16px 0px 16px 0px;
+    margin: 0px -15px 0px 0px;
+    margin-top: -4184px;
+    margin-right: 0.8px;
+    float: right;
+}
+
+.sidebar2 ul li{
+    margin-left: -25px;
+}
+
+span {
+    position: absolute;
+    border: 1px solid#e2e5e9;
+    height: 25px;
+    width: 51px;
+    border-radius: 3px;
+    margin-left: 9.7%;
+    top: 22px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    font-size: 0.8rem;
+    color: #82878b;
+}
+
+.accordion-header button {
+    border: none;
+    background-color: white !important;
+}
+
+.acordion-item .accordion-button {
+    color: #272727;
+}
+
+.acc {
+    top: 68px !important;
+    left: 0;
+
+}
+
+#collapseOne,
+#collapseTwo {
+    border-style: none !important;
+    border: none !important;
+}
+
+.accordion-button {
+    font-weight: 500;
+}
