@@ -1,1 +1,1 @@
-![image](Shubhendu/assignment_2/3.jpg)
+![image](sample.png)
