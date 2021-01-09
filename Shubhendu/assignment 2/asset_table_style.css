@@ -1,0 +1,26 @@
+body{
+    background-color: rgba(32, 32, 32, 1) !important;
+}
+
+.nav>a{
+    color:whitesmoke !important;
+}
+.nav-tabs{
+    border-bottom: none !important;
+}
+.nav-tabs>a{
+    background-color: rgba(32, 32, 32, 1) !important;
+    border:none !important;
+    /* border-bottom: 1px solid white !important; */
+}
+
+.nav-tabs> a:hover{
+    border-bottom: 1px solid red !important;
+    box-shadow: 2px 2px 6px 0px red ;
+}
+.nav-tabs>a:nth-child(3), a:focus{
+    border-bottom: 1px solid blue !important;
+    box-shadow: 2px 2px 6px 0px blue ;
+}
+
+/* rgba(40, 40, 40, 1) */
