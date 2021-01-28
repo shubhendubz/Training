@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" media="(max-width: 576px)" href="style_mobile.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Dashboard</title>
+</head>
+
+<body class="container-fluid">
+  <!-- TODO(shubu): Header -->
+  <header class="row fixed-top">
+    <div class="menu-open mt-2" onclick="openNav()"><i class="fa fa-bars"></i> Menu</div>
+    <div class="logo ">Logo</div>
+  </header>
+  <!-- TODO(shubu): Nav -->
+  <nav class="fixed-top mt-5 sidenav" id="mySideNav">
+    <!-- Contact card -->
+    <div class="row mt-3 mx-0 p-0 profile">
+      <div class="col-md-4 col-sm-4 ml-1">
+        <img src="avatar2.png" alt="avatar" height="46px" width="46px" class="avatar" />
+      </div>
+      <div class="col-md-7 col-sm-7  p-0 ml-3">
+        <span>Welcome, <strong>Mike</strong></span><br />
+        <div class="contact mt-1 ml-3">
+          <a href="#" class="btn-light msg"><i class="fa fa-envelope"></i></a>
+          <a href="#" class="btn-light usr"><i class="fa fa-user"></i></a>
+          <a href="#" class="btn-light stngs"><i class="fa fa-cog"></i></a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Menu Items -->
+    <div class="dash-title ml-3">
+      <h5>Dashboard</h5>
+    </div>
+    <div class="close-dash w-100">
+      <a href="javascript:void(0)" onclick="closeNav()" class="menu-close" title="close menu"><i
+          class="fa fa-remove fa-fw"></i>&nbsp;
+        Close Menu</a>
+    </div>
+    <div class="dash-body">
+      <a href="#" class="dash-item"><i class="fa fa-users fa-fw"></i>&nbsp; Overview</a>
+      <a href="#" class="dash-item"><i class="fa fa-eye fa-fw"></i>&nbsp; Views</a>
+      <a href="#" class="dash-item"><i class="fa fa-users fa-fw"></i>&nbsp; Traffic</a>
+      <a href="#" class="dash-item"><i class="fa fa-bullseye fa-fw"></i>&nbsp; Geo</a>
+      <a href="#" class="dash-item"><i class="fa fa-diamond fa-fw"></i>&nbsp; Orders</a>
+      <a href="#" class="dash-item"><i class="fa fa-bell fa-fw"></i>&nbsp; News</a>
+      <a href="#" class="dash-item"><i class="fa fa-bank fa-fw"></i>&nbsp; General</a>
+      <a href="#" class="dash-item"><i class="fa fa-history fa-fw"></i>&nbsp; History</a>
+      <a href="#" class="dash-item"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a><br><br>
+    </div>
+  </nav>
+  <!-- Overlay Background -->
+  <div class="overlay" onclick="closeNav()" title="close side menu" id="myOverlay">
+    hello
+  </div>
+  <!-- TODO(shubu): Main -->
+  <main class="container-fluid">
+    <!-- Dashboard -->
+    <!-- Dashboard Header -->
+
+    <header class="container-fluid" style="padding-top:22px">
+      <h5><i class="fa fa-dashboard"></i> My Dashboard</h5>
+    </header>
+
+    <!-- Dashboard Status Bar -->
+    <div class="stat-bar">
+      <div class="card bg-danger mx-2">
+        <div class="container">
+          <div class="icon"><i class="fa fa-comment"></i></div>
+          <div class="count">
+            <h3>52</h3>
+          </div>
+          <div class="name"></div>
+          <h4>Messages</h4>
+        </div>
+      </div>
+
+      <div class="card bg-primary  mx-2">
+        <div class="container">
+          <div class="icon"><i class="fa fa-eye "></i></div>
+          <div class="count">
+            <h3>99</h3>
+          </div>
+          <div class="name">
+            <h4>Views</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-info  mx-2">
+        <div class="container">
+          <div class="icon"><i class="fa fa-share-alt "></i></div>
+          <div class="count">
+            <h3>23</h3>
+          </div>
+          <div class="name">
+            <h4>Shares</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-warning  mx-2">
+        <div class="container">
+          <div class="icon"><i class="fa fa-users "></i></div>
+          <div class="count">
+            <h3>50</h3>
+          </div>
+          <div class="name">
+            <h4>Users</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- Region & Feeds -->
+    <div class="rss mt-4 container-fluid p-0 d-flex">
+      <!-- Regions -->
+      <div class="col-md-3  col-sm-3  region p-2">
+        <h5>Regions</h5>
+        <img src="region.jpg" alt="region" width="100%" height="90%">
+      </div>
+      <!-- Feeds -->
+      <div class="col-md-9  col-sm-9 feeds p-2">
+        <h5>Feeds</h5>
+        <table class="table table-striped">
+          <tbody>
+            <tr>
+              <td><i class="fa fa-user text-primary"></i></td>
+              <td>New record, over 90 views.</td>
+              <td><i>10 mins</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-bell text-danger"></i></td>
+              <td>Database error.</td>
+              <td><i>15 mins</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-users text-warning"></i></td>
+              <td>New record, over 40 users.</td>
+              <td><i>17 mins</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-comment text-danger"></i></td>
+              <td>New comments.</td>
+              <td><i>25 mins</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-bookmark text-primary"></i></td>
+              <td>Check transactions.</td>
+              <td><i>28 mins</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-laptop text-danger"></i></td>
+              <td>CPU overload.</td>
+              <td><i>35 mins</i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-share-alt text-success"></i></td>
+              <td>New shares.</td>
+              <td><i>39 mins</i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <!-- Progress Bar Stats -->
+    <div class="progress-stats">
+      <h5>General Stats</h5>
+      <p>New Visitors</p>
+      <div class="bg-secondary bar1">
+        <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemax="100" aria-valuemin="0">+25%</div>
+      </div>
+
+      <p>New Users</p>
+      <div class="bg-secondary bar2">
+        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemax="100" aria-valuemin="0">+75%</div>
+      </div>
+
+      <p>Bounce Rate</p>
+      <div class="bg-secondary bar3">
+        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemax="100" aria-valuemin="0">+95%</div>
+      </div>
+
+    </div>
+    <hr />
+    <div class="p-2 country-details">
+      <h5>Countries</h5>
+      <table class="table table-striped countries">
+        <tbody>
+          <tr>
+            <td>United States</td>
+            <td>65%</td>
+          </tr>
+          <tr>
+            <td>UK</td>
+            <td>15.7%</td>
+          </tr>
+          <tr>
+            <td>Russia</td>
+            <td>5.6%</td>
+          </tr>
+          <tr>
+            <td>Spain</td>
+            <td>2.1%</td>
+          </tr>
+          <tr>
+            <td>India</td>
+            <td>1.9%</td>
+          </tr>
+          <tr>
+            <td>France</td>
+            <td>1.5%</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <button class="btn btn-secondary">More Countries &nbsp;<i class="fa fa-arrow-right"></i></button>
+    </div>
+    <hr />
+    <!-- Recent Users -->
+    <div class="recent-users p-2">
+      <h5>Recent Users</h5>
+      <ul class="r-users">
+        <li class="list-group-item">
+          <img src="avatar2.png" class="mr-3">
+          <span class="">Mike</span><br>
+        </li>
+        <li class="list-group-item">
+          <img src="avatar5.png" class="mr-3">
+          <span class="">Jill</span><br>
+        </li>
+        <li class="list-group-item">
+          <img src="avatar6.png" class="mr-3">
+          <span class="">Jane</span><br>
+        </li>
+      </ul>
+    </div>
+    <!-- Comments  -->
+    <div class="recent-comments p-2">
+      <h5>Recent Comments</h5>
+      <div class="row comments">
+        <div class="col-md-2  col-sm-2 p-2">
+          <img src="avatar3.png">
+        </div>
+        <div class="col-md-10 col-sm-10 p-2">
+          <h4>John <span class="timestamp">Sep 29, 2014, 9:12 PM</span></h4>
+          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="row comments mt-3">
+        <div class="col-md-2  col-sm-2  p-2">
+          <img src="avatar1.png">
+        </div>
+        <div class="col-md-10  col-sm-10  p-2">
+          <h4>Bo <span class="timestamp">Sep 28, 2014, 10:15 PM</span></h4>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+        </div>
+      </div>
+    </div>
+    <!-- Audience  -->
+    <div class="audi container-fluid">
+      <div class="row audience m-3">
+        <div class="col-md-4  col-sm-4 demo">
+          <h5>Demographic</h5>
+          <p>Language</p>
+          <p>Country</p>
+          <p>City</p>
+        </div>
+        <div class=" col-md-4 col-sm-4 system ">
+          <h5>System</h5>
+          <p>Browser</p>
+          <p>OS</p>
+          <p>More</p>
+        </div>
+        <div class="col-md-4  col-sm-4 target">
+          <h5>Target</h5>
+          <p>Users</p>
+          <p>Active</p>
+          <p>Geo</p>
+          <p>Interests</p>
+        </div>
+      </div>
+    </div>
+    <!-- TODO(shubu): Footer -->
+    <footer class="mt-4 pl-1">
+      <h4>FOOTER</h4>
+      <p>Made with love <span id="heart">&#10084;</span> <a href="https://sksenapati007.github.io/shubhendukumars/"
+          target="_blank">-
+          Shubhendu</a></p>
+    </footer>
+  </main>
+  <script src="nav-functions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/f961957c19.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

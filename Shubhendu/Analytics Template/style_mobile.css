@@ -1,0 +1,331 @@
+@media (max-width: 576px) {
+
+
+    body {
+        background-color: #f1f1f1 !important;
+        font-family: "Raleway", sans-serif !important;
+        overflow-y: scroll;
+        line-height: 0.5;
+        overflow-x: hidden !important;
+        font-size: 15px !important;
+    }
+
+    @font-face {
+        font-family: Raleway;
+        src: url(fonts/Raleway-VariableFont_wght.ttf);
+    }
+
+
+    /* Header */
+    body>header {
+        color: white;
+        font-size: 18px;
+        background-color: black;
+        height: 6vh;
+    }
+
+    .menu-open {
+        cursor: pointer;
+        float: left;
+        margin-left: 4%;
+        display: block;
+    }
+
+    .logo {
+        margin-left: 87%;
+        margin-top: -6%;
+        float: right;
+    }
+
+    .close-dash a{
+        text-decoration: none !important;
+        color: white !important;
+        background-color: gray;
+    }
+    .close-dash a:hover{
+        text-decoration: none !important;
+        color: white;
+        background-color: black;
+    }
+
+
+
+    .menu-close,
+    .close-dash {
+        display: block;
+    }
+
+    /* Side Navbar */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        background-color: white;
+        transition: 0.5s;
+        padding-top: 40px;
+        width: 60% !important;
+        font-weight: 200;
+        overflow-y: hidden;
+    }
+
+    .sidenav a {
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        transition: 0.3s;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 8px;
+        font-size: 36px;
+        /* margin-left: 50px; */
+    }
+/* 
+    .profile{
+        display: flex !important;
+        flex-direction: row !important;
+    } */
+
+    .avatar {
+        border-radius: 50%;
+    }
+
+    .contact {
+        word-spacing: 2px;
+        font-size: 16px;
+        margin-left: -52px !important;
+    }
+
+    hr {
+        border-top: 3px solid #eee;
+        margin: 30px 0 !important;
+    }
+
+    .dash {
+        font-size: 18px !important;
+    }
+
+    .dash-body .dash-item {
+        font-size: 15px;
+        width: 100%;
+        line-height: 1.5;
+        padding: 8px 16px;
+        text-align: left;
+        border: none;
+        display: block;
+        white-space: normal;
+        float: none;
+        outline: 0;
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+
+    .dash-body>a {
+        text-decoration: none !important;
+    }
+
+    .dash-body>a:hover {
+        background-color: #ccc !important;
+        color: #000 !important;
+    }
+
+    .dash-body>a:focus {
+        color: #fff !important;
+        background-color: #2196F3 !important;
+    }
+
+    /* Overlay */
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: #2196F3;
+        cursor: pointer;
+        display: block;
+        z-index: 4 !important;
+        background-color: rgba(119, 136, 153, 0.486);
+        opacity: 0.8;
+    }
+
+    /* Main Content */
+    main {
+        margin-top: 8% !important;
+        margin-left: 0% !important;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+
+    main>header {
+        font-size: 15px !important;
+        font-weight: 200 !important;
+    }
+
+    .stat-bar {
+        display: block;
+        /* display: flex; */
+        width: 100%;
+        height: 8%;
+    }
+
+    .stat-bar .card {
+        color: white;
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    .icon {
+        float: left;
+        font-size: 50px;
+    }
+
+    .count {
+        float: right;
+        padding-top: 20px;
+    }
+
+    .name {
+        padding-top: 90px;
+    }
+
+    .rss {
+        flex-direction: column;
+    }
+
+    .feeds table {
+        width: 100%;
+    }
+
+    table tr td {
+        padding: 8px !important;
+    }
+
+    .progress-stats {
+        width: 100%;
+    }
+
+    .bar1 div {
+        width: 25%;
+        background-color: green;
+        padding: 8px 16px;
+    }
+
+    .bar2 div {
+        width: 50%;
+        background-color: orange;
+        padding: 8px 16px;
+    }
+
+    .bar3 div {
+        width: 75%;
+        background-color: red;
+        padding: 8px 16px;
+    }
+
+    .country-details {
+        width: 100%;
+    }
+
+    .countries tr:hover {
+        background-color: #ccc;
+    }
+
+    .country-details .btn:hover {
+        color: #000 !important;
+        background-color: #ccc !important;
+    }
+
+    .recent-users {
+        width: 100%;
+    }
+
+    .r-users {
+        padding: 0;
+        list-style-type: none !important;
+        margin-left: 2px !important;
+        box-shadow: 5px 6px 8px 0px rgb(0 0 0/ 20%);
+    }
+
+    .r-users li {
+        padding: 16px 16px !important;
+        font-size: 25px !important;
+    }
+
+    .r-users li img {
+        width: 35px;
+        border-radius: 50%;
+    }
+
+    .comments div img {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+    }
+
+    .r-comments {
+        list-style-type: none !important;
+        box-shadow: 4px 0px 0px 0px;
+        /* margin-left: -25px !important; */
+    }
+
+    .timestamp {
+        font-size: 15px !important;
+        opacity: 0.6;
+    }
+
+    .comments div p {
+        margin: 15px 0px;
+    }
+
+    .audience {
+        /* display: grid; */
+        color: #fff !important;
+        height: 100%;
+        width: 100%;
+    }
+
+    .audi {
+        background: #616161;
+        padding: 32px 20px !important;
+        margin-left: 1px !important;
+    }
+
+    .audience div {
+        padding: 8px 16px !important;
+    }
+
+
+    .demo h5 {
+        border-color: #4CAF50 !important;
+        border-bottom: 6px solid #ccc;
+        padding-bottom: 2px;
+    }
+
+    .system h5 {
+        border-color: #f44336 !important;
+        border-bottom: 6px solid #ccc;
+        padding-bottom: 2px;
+    }
+
+    .target h5 {
+        border-color: #ff9800 !important;
+        border-bottom: 6px solid #ccc;
+        padding-bottom: 2px;
+    }
+
+    #heart {
+        color: red;
+    }
+
+    footer {
+        font-weight: 400;
+        height: 90px !important;
+        text-align: center;
+    }
+}
