@@ -1,0 +1,41 @@
+@function calcu($x) {
+  $res: 0;
+
+  @if $x==1 {
+    $res: $unitdef / 4;
+  } @else if $x==2 {
+    $res: $unitdef / 2;
+  } @else if $x==3 {
+    $res: $unitdef;
+  } @else if $x==4 {
+    $res: $unitdef * 1.5;
+  } @else if $x==5 {
+    $res: $unitdef * 3;
+  }
+
+  @return $res;
+}
+
+@function colorScheme($tcol) {
+  $col: null;
+
+  @if $tcol== "primary" {
+    $col: $primary;
+  } @else if $tcol== "secondary" {
+    $col: $secondary;
+  } @else if $tcol== "success" {
+    $col: $success;
+  } @else if $tcol== "info" {
+    $col: $info;
+  } @else if $tcol== "warning" {
+    $col: $warning;
+  } @else if $tcol== "danger" {
+    $col: $danger;
+  } @else if $tcol== "light" {
+    $col: $light;
+  } @else if $tcol== "dark" {
+    $col: $dark;
+  }
+
+  @return $col;
+}

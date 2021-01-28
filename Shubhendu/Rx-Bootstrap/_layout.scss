@@ -1,0 +1,45 @@
+$unit: "rem";
+$unitdef: 1 !default;
+
+$units: (0, 0.25, 0.5, 1, 1.5, 3);
+
+$position: (top, bottom, left, right, auto);
+
+// $mapMP: (
+//   "m" : "margin",
+//   "p" : "padding"
+// );
+
+// $mapK : map-keys($map: $mapMP);
+
+@for $i from 1 to 6 {
+  @each $pos in $position {
+    @if $pos== "auto" {
+      .m-#{$i} {
+        margin: #{calcu($i) + $unit} !important;
+      }
+      .p-#{$i} {
+        padding: #{calcu($i) + $unit} !important;
+      }
+    } @else if
+      $pos==
+      "top" or
+      $pos==
+      "bottom" or
+      $pos==
+      "left" or
+      $pos==
+      "right"
+    {
+      .m#{str-slice($pos, 0, 1)}-#{$i} {
+        margin-#{$pos}: #{calcu($i) + $unit} !important;
+      }
+
+      .p#{str-slice($pos, 0, 1)}-#{$i} {
+        padding-#{$pos}: #{calcu($i) + $unit} !important;
+      }
+    } @else {
+      @error "Unknown properties #{$position}.";
+    }
+  }
+}

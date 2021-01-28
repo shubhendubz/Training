@@ -1,0 +1,85 @@
+
+$lime: #AAFFAA !default;
+$peach: #FFB870 !default;
+$darkorange: #FF5656 !default;
+$gray: #6c757d !default;
+$red:     #DC3545 !default;
+$orange:  #F39237 !default;
+$yellow:  #FFFFAA !default;
+$green:   #3DAF80 !default;
+$white: rgb(243, 243, 243) !default;
+$blue: #29B1FF  !default;
+
+$colors:(
+    "lime" : $lime,
+    "peach" : $peach,
+    "green" : $green,
+    "darkorange" : $darkorange,
+    "gray" : $gray,
+    "red" : $red,
+    "orange" : $orange,
+    "yellow" : $yellow,
+    "white" : $white,
+    "blue" : $blue
+) !default;
+
+$primary: $green !default;
+$secondary: $yellow !default;
+$success: $lime !default;
+$info: $blue !default;
+$warning: $peach !default;
+$danger: $red !default;
+$light: $white !default;
+$dark: $gray !default;
+
+$theme-colors:(
+    "primary": $green ,
+    "secondary": $yellow ,
+    "success": $lime,
+    "info": $blue ,
+    "warning": $peach ,
+    "danger": $red ,
+    "light": $white ,
+    "dark": $gray
+) !default;
+
+
+$border-width:   2px !default;
+$border-widths: (
+  0: 0,
+  1: 2px/1.5,
+  2: 4px/2,
+  3: 6px/2.5,
+  4: 8px/3,
+  5: 10px/3.5
+) !default;
+
+$border-color: $darkorange !default;
+$body-color: $white !default;
+
+
+
+$position-values: (
+    0: 0%,
+    25:25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto);
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px);
+
+$unit: 1rem !default;
+$units: (
+    0: 0,
+    1: $unit / 4,
+    2: $unit / 2,
+    3: $unit,
+    4: $unit * 1.5,
+    5: $unit * 3);

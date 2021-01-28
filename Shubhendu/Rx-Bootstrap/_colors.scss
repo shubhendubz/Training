@@ -1,0 +1,35 @@
+$themeDef: $primary !default;
+
+$themes: (
+  "primary",
+  "secondary",
+  "info",
+  "warning",
+  "danger",
+  "success",
+  "dark",
+  "light"
+);
+
+$content: ("background", "font", "border");
+
+@each $theme in $themes {
+  @each $con in $content {
+    @if $con == "background" {
+      .bg-#{$theme} {
+            #{$con}-color: colorScheme($theme) !important;
+          }
+    } @else if $con == "font" {
+      .fc-#{$theme} {
+            color:  colorScheme($theme) !important;
+          }
+    } @else if $con == "border" {
+      .border-#{$theme} {
+        #{$con}-color:  colorScheme($theme) !important;
+        @include borderStyle;
+      }
+    } @else {
+      @error "Unknown element #{$con}.";
+    }
+  }
+}
